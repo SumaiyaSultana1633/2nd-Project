@@ -154,3 +154,50 @@ background-repeat: no-repeat;
   font-size:15px;
   cursor:pointer;
 }
+
+
+.about{
+  padding:100px 20px;
+  text-align:center;
+  background:#20053b;
+  color:#ffffff;
+}
+
+.about-title{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:16px;
+}
+
+
+.about-text{
+  max-width:720px;
+  margin:0 auto 60px;
+  font-size:14px;
+  color:#cfcfcf;
+}
+
+.about-stats{
+  max-width:1000px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+}
+
+.stat-item{
+  flex:1;
+}
+
+.stat-item h3{
+  font-size:36px;
+  font-weight:700;
+  color: #00ffb2;
+  margin-bottom:8px;
+}
+
+.stat-item span{
+  font-size:12px;
+  color:#b5b5b5;
+}
+
+
