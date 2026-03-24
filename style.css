@@ -243,7 +243,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3.5,50px);
+    grid-template-rows: auto;
     gap: 15px;
 }
 
@@ -439,5 +439,144 @@ body {
   display: flex;
 }
 
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #0f0f1a;
+}
+
+
+
+.hero {
+  
+  background-image: url("assets/footer-bg.png");
+background-size: 100%;
+background-position: center;
+background-repeat: no-repeat;
+ min-height:90vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#ffffff;
+  padding:40px 20px;
+}
+
+
+.content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.content h1 span {
+  background: linear-gradient(45deg, #ff4ecd, #7a5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.icon-item img {
+  height: 40px;
+  width: 35px;
+  
+}
+
+.footer-text {
+  margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+
+
+
+
+/* HAMBURGER  */
+.hamburger {
+  display: none;
+}
+
+/* === MOBILE ==== */
+@media (max-width: 576px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-action {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 26px;
+    color: white;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  /* BANNER */
+  .banner-buttons {
+    flex-direction: row;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  /* ABOUT */
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+/* why */
+  .big,
+  .small01,
+  .small02,
+  .wide,
+  .vertical {
+    grid-column: span 3 ;
+    grid-row: span 3 ;
+  }
+  
+  /* EPISODES */
+  .episode-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* HOST */
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 
